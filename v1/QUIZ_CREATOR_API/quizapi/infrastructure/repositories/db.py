@@ -1,0 +1,5 @@
+quizzes: list = []
+players: list = []
+rewards: list = []
+game_histories: list = []
+questions: list = []
