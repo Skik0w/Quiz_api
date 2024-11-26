@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5903752c-3b9d-4e2f-90cb-a5b3a3b16c94" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/.idea/QUIZ_CREATOR_API.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/commands.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/api/routers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/api/routers/gamehistory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/api/routers/player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/api/routers/question.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/api/routers/quiz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/api/routers/store.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/api/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/container.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/domain/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/domain/gamehistory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/domain/player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/domain/question.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/domain/quiz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/domain/store.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/repositories/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/repositories/igamehistory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/repositories/iplayer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/repositories/iquestion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/repositories/iquiz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/core/repositories/istore.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/repositories/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/repositories/db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/repositories/gamehistorymock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/repositories/playermock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/repositories/questionmock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/repositories/quizmock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/repositories/storemock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/services/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/services/gamehistory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/services/igamehistory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/services/iplayer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/services/iquestion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/services/iquiz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/services/istore.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/services/player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/services/question.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/services/quiz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/infrastructure/services/store.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/quizapi/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/requirements-dev.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QUIZ_CREATOR_API/requirements.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ovmlFSj8yNaHyUaxOru4c1EVrL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.container.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.quiz (1).executor": "Run",
+    "Python.quiz.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bartek\OneDrive\Pulpit\QUIZ_CREATOR_API\quiz_api" />
+      <recent name="C:\Users\Bartek\OneDrive\Pulpit\QUIZ_CREATOR_API" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="container" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/quizapi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/quizapi/container.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/quizapi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/quizapi/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="QUIZ_CREATOR_API" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/quiz_api/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="quiz (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/quizapi/core/domain" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/quizapi/core/domain/quiz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="quiz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/quizapi/api/routers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/quizapi/api/routers/quiz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="quiz-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.container" />
+        <item itemvalue="Python.quiz (1)" />
+        <item itemvalue="Python.quiz" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PY-243.21565.199" />
+        <option value="bundled-python-sdk-cab1f2013843-4ae2d6a61b08-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.21565.199" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5903752c-3b9d-4e2f-90cb-a5b3a3b16c94" name="Changes" comment="" />
+      <created>1731758573152</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731758573152</updated>
+      <workItem from="1731758574510" duration="320000" />
+      <workItem from="1731758965561" duration="112000" />
+      <workItem from="1731759104305" duration="9000000" />
+      <workItem from="1731771892907" duration="14991000" />
+      <workItem from="1731789411591" duration="119000" />
+      <workItem from="1731867493983" duration="64000" />
+      <workItem from="1731956281077" duration="697000" />
+      <workItem from="1732031660399" duration="2241000" />
+      <workItem from="1732454600314" duration="785000" />
+      <workItem from="1732458229196" duration="2243000" />
+      <workItem from="1732460906227" duration="1000" />
+      <workItem from="1732638047049" duration="108000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/main_py$quiz.coverage" NAME="quiz Coverage Results" MODIFIED="1731788233817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/quizapi/api/routers" />
+    <SUITE FILE_PATH="coverage/main_py$quiz__1_.coverage" NAME="quiz (1) Coverage Results" MODIFIED="1731788246552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/quizapi/core/domain" />
+    <SUITE FILE_PATH="coverage/main_py$container.coverage" NAME="container Coverage Results" MODIFIED="1731788251439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/quizapi" />
+    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1732460450212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/quizapi" />
+    <SUITE FILE_PATH="coverage/main_py$main__1_.coverage" NAME="main Coverage Results" MODIFIED="1731788751298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/quizapi" />
+    <SUITE FILE_PATH="coverage/quiz_api$main.coverage" NAME="main Coverage Results" MODIFIED="1732638145741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/quizapi" />
+  </component>
+</project>
