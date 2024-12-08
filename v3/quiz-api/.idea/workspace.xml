@@ -37,6 +37,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Bartek/OneDrive/Pulpit/PSI/v4/quiz-api",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,6 +52,12 @@
       <recent name="C:\Users\Bartek\OneDrive\Pulpit\quiz-api\quizapi\api\routers" />
       <recent name="C:\Users\Bartek\OneDrive\Pulpit\quiz-api\quizapi" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="pip install -r requirements-dev.txt" />
+      <command value="pip install -r requirements.txt" />
+    </option>
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -129,6 +136,17 @@
       <workItem from="1732636381849" duration="1138000" />
       <workItem from="1732637741166" duration="49000" />
       <workItem from="1732639313064" duration="809000" />
+      <workItem from="1732640219871" duration="454000" />
+      <workItem from="1732823331947" duration="5594000" />
+      <workItem from="1732829705145" duration="3799000" />
+      <workItem from="1732907267890" duration="6676000" />
+      <workItem from="1732916128677" duration="2783000" />
+      <workItem from="1732972601560" duration="6921000" />
+      <workItem from="1733139675976" duration="192000" />
+      <workItem from="1733180215528" duration="24000" />
+      <workItem from="1733240475878" duration="2882000" />
+      <workItem from="1733243723066" duration="685000" />
+      <workItem from="1733666940448" duration="14000" />
     </task>
     <servers />
   </component>
@@ -136,7 +154,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1732639371975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/quizapi" />
+    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1732974295558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/quizapi" />
     <SUITE FILE_PATH="coverage/main_py$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1732637524119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../PSI/v2/quiz-api/quizapi" />
   </component>
 </project>
