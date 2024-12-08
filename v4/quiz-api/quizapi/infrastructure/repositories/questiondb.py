@@ -3,15 +3,29 @@ from asyncpg import Record # type: ignore
 from sqlalchemy import select, join
 from quizapi.core.repositories.iquestion import IQuestionRepository
 from quizapi.core.domain.question import Question, QuestionIn
-from quizapi.db import question_table, database
+from quizapi.db import question_table, database, quiz_table, player_table
 from quizapi.infrastructure.dto.questiondto import QuestionDTO
 
 class QuestionRepository(IQuestionRepository):
 
     async def get_all_questions(self) -> Iterable[Any]:
-        query = question_table.select().order_by(question_table.c.id.asc())
+        query = select(
+            question_table, quiz_table, player_table
+            .select_from(
+                join(
+                    question_table,
+                    join(
+                        quiz_table,
+                        player_table,
+                        quiz_table.c.player_id == player_table.c.id
+                    ),
+                    question_table.c.quiz_id == quiz_table.c.id
+                )
+            )
+            .order_by(question_table.c.id.asc())
+        )
         questions = await database.fetch_all(query)
-        return [Question(**dict(question)) for question in questions]
+        return [QuestionDTO.from_record(question) for question in questions]
 
     async def get_question_by_id(self, question_id: int) -> Record | None:
         question = await self._get_by_id(question_id)

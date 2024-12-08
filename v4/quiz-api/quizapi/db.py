@@ -18,12 +18,11 @@ quiz_table = sqlalchemy.Table(
     metadata,
     sqlalchemy.Column("id", sqlalchemy.Integer, primary_key=True),
     sqlalchemy.Column("title", sqlalchemy.String),
-    # sqlalchemy.Column(
-    #     "question",
-    #     sqlalchemy.ForeignKey("question.id"),
-    #     nullable=False,
-    # ),
-    sqlalchemy.Column("player_id", sqlalchemy.Integer),
+    sqlalchemy.Column(
+        "player_id",
+        sqlalchemy.ForeignKey("players.id"),
+        nullable=False,
+    ),
     sqlalchemy.Column("description", sqlalchemy.String),
 )
 
@@ -70,13 +69,6 @@ database = databases.Database(
 
 
 async def init_db(retries: int = 5, delay: int = 5) -> None:
-    """Function initializing the DB.
-
-    Args:
-        retries (int, optional): Number of retries of connect to DB.
-            Defaults to 5.
-        delay (int, optional): Delay of connect do DB. Defaults to 2.
-    """
     for attempt in range(retries):
         try:
             async with engine.begin() as conn:

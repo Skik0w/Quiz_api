@@ -1,22 +1,46 @@
 from typing import Any, Iterable
 from asyncpg import Record # type: ignore
 from sqlalchemy import select, join
+
 from quizapi.core.repositories.iquiz import IQuizRepository
 from quizapi.core.domain.quiz import Quiz, QuizIn
-from quizapi.db import quiz_table, database
+from quizapi.db import quiz_table, database, player_table, question_table
 from quizapi.infrastructure.dto.quizdto import QuizDTO
-
 
 class QuizRepository(IQuizRepository):
 
     async def get_all_quizzes(self) -> Iterable[Any]:
-        query = quiz_table.select().order_by(quiz_table.c.id.asc()) # bylo quiz_id zamiast id
-        quizzes = await database.fetch_all(query)
-        return [Quiz(**dict(quiz)) for quiz in quizzes]
+        query = (
+            select(player_table, quiz_table)
+            .select_from(
+                join(
+                    player_table,
+                    quiz_table,
+                    player_table.c.id == quiz_table.c.player_id  # Łączenie na podstawie klucza obcego
+                )
+            )
+            .order_by(quiz_table.c.id.asc())
+        )
+        quizess = await database.fetch_all(query)
+        print(str(query))
+        return [QuizDTO.from_record(quiz) for quiz in quizess]
 
-    async def get_quiz_by_id(self, quiz_id: int) -> Record | None:
-        quiz = await self._get_by_id(quiz_id)
-        return Quiz(**dict(quiz)) if quiz else None
+    async def get_quiz_by_id(self, quiz_id: int) -> Any | None:
+        query = (
+            select(quiz_table, player_table)
+            .select_from(
+                join(
+                    quiz_table,
+                    player_table,
+                    quiz_table.c.player_id == player_table.c.id
+                )
+            )
+            .where(quiz_table.c.id == quiz_id)
+            .order_by(quiz_table.c.id.asc())
+        )
+
+        quiz = await database.fetch_all(query)
+        return QuizDTO.from_record(quiz) if quiz else None
 
     async def add_quiz(self, data: QuizIn) -> Any | None:
         query = quiz_table.insert().values(**data.model_dump())
@@ -44,5 +68,12 @@ class QuizRepository(IQuizRepository):
         return False
 
     async def _get_by_id(self, quiz_id: int) -> Record | None:
-        query = quiz_table.select().where(quiz_table.c.id == quiz_id).order_by(quiz_table.c.title.asc()) # tu bylo name zamiast title
+
+        query = (
+            quiz_table.select()
+            .where(quiz_table.c.id == quiz_id)
+            .order_by(quiz_table.c.id.asc())
+        )
         return await database.fetch_one(query)
+        #query = quiz_table.select().where(quiz_table.c.id == quiz_id).order_by(quiz_table.c.title.asc()) # tu bylo name zamiast title
+        #return await database.fetch_one(query)

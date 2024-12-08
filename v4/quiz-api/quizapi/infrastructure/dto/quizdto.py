@@ -2,12 +2,14 @@ from typing import Optional
 from asyncpg import Record  # type: ignore
 from pydantic import BaseModel, ConfigDict
 
+from quizapi.infrastructure.dto.playerdto import PlayerDTO
+
+
 class QuizDTO(BaseModel):
     id: int
     title: str
-    #question_id: int
-    player_id: int
-    description: Optional[str] = None
+    player: PlayerDTO
+    description: str
 
     model_config = ConfigDict(
         from_attributes=True,
@@ -17,13 +19,15 @@ class QuizDTO(BaseModel):
 
     @classmethod
     def from_record(cls, record: Record) -> "QuizDTO":
-
         record_dict = dict(record)
-
         return cls(
-            id=record_dict.get("id"), # type ignore
-            title=record_dict.get("title"), # type ignore
-            #question_id=record_dict.get("question_id"),
-            player_id=record_dict.get("player_id"), # type: ignore
+            id=record_dict.get("id"), # type: ignore
+            title=record_dict.get("title"), # type: ignore
+            player=PlayerDTO(
+                id=record_dict.get("id_1"), # type: ignore
+                username=record_dict.get("username"), # type: ignore
+            ),
             description=record_dict.get("description"), # type: ignore
         )
+
+
