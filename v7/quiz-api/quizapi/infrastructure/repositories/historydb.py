@@ -1,7 +1,6 @@
 from typing import Any, Iterable
 from asyncpg import Record # type: ignore
 from sqlalchemy import select, join, cast, Integer
-from sqlalchemy.orm import aliased
 
 from quizapi.core.domain.question import Question
 from quizapi.core.repositories.ihistory import IHistoryRepository
