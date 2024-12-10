@@ -4,6 +4,7 @@ class QuizIn(BaseModel):
     title: str
     player_id: int
     description: str
+    shared: bool
 
 class Quiz(QuizIn):
     id: int

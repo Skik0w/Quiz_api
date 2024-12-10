@@ -38,6 +38,7 @@ class HistoryDTO(BaseModel):
                     username=record_dict.get("player_username2"),
                 ),
                 description=record_dict.get("description"),
+                shared=record_dict.get("shared"),
             ),
             total_questions=record_dict.get("total_questions"),
             correct_answers=record_dict.get("correct_answers"),

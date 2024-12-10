@@ -19,6 +19,7 @@ class QuizRepository(IQuizRepository):
                 quiz_table.c.id.label("quiz_id"),
                 quiz_table.c.title.label("quiz_title"),
                 quiz_table.c.description.label("quiz_description"),
+                quiz_table.c.shared.label("quiz_shared"),
                 player_table.c.id.label("player_id"),
                 player_table.c.username.label("player_username"),
             )
@@ -41,6 +42,7 @@ class QuizRepository(IQuizRepository):
                 quiz_table.c.id.label("quiz_id"),
                 quiz_table.c.title.label("quiz_title"),
                 quiz_table.c.description.label("quiz_description"),
+                quiz_table.c.shared.label("quiz_shared"),
                 player_table.c.id.label("player_id"),
                 player_table.c.username.label("player_username"),
             )

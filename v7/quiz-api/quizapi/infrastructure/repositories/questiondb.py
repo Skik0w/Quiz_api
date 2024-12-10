@@ -21,6 +21,7 @@ class QuestionRepository(IQuestionRepository):
                 quiz_table.c.id.label("quiz_id"),
                 quiz_table.c.title.label("title"),
                 quiz_table.c.description.label("description"),
+                quiz_table.c.shared.label("shared"),
                 player_table.c.id.label("player_id"),
                 player_table.c.username.label("username")
             )
@@ -53,6 +54,7 @@ class QuestionRepository(IQuestionRepository):
                 quiz_table.c.id.label("quiz_id"),
                 quiz_table.c.title.label("title"),
                 quiz_table.c.description.label("description"),
+                quiz_table.c.shared.label("shared"),
                 player_table.c.id.label("player_id"),
                 player_table.c.username.label("username")
             )

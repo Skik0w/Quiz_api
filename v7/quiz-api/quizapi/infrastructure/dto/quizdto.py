@@ -10,6 +10,7 @@ class QuizDTO(BaseModel):
     title: str
     player: PlayerDTO
     description: str
+    shared: bool
 
     model_config = ConfigDict(
         from_attributes=True,
@@ -28,6 +29,7 @@ class QuizDTO(BaseModel):
                 id=record_dict.get("player_id"),  # type: ignore
                 username=record_dict.get("player_username"), # type: ignore
             ),
+            shared=record_dict.get("quiz_shared"), # type: ignore
         )
 
 

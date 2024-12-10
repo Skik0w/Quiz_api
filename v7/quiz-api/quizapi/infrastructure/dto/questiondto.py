@@ -42,5 +42,6 @@ class QuestionDTO(BaseModel):
                     username=record_dict.get("username"),  # type: ignore
                 ),
                 description=record_dict.get("description"), # type: ignore
+                shared=record_dict.get("shared"),
             )
         )

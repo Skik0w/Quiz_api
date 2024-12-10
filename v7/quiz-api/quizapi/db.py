@@ -30,6 +30,7 @@ quiz_table = sqlalchemy.Table(
         nullable=False,
     ),
     sqlalchemy.Column("description", sqlalchemy.String),
+    sqlalchemy.Column("shared", sqlalchemy.Boolean),
 )
 
 question_table = sqlalchemy.Table(
