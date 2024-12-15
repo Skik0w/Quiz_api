@@ -30,6 +30,8 @@ async def lifespan(_: FastAPI) -> AsyncGenerator:
 app = FastAPI(
     title="Quiz API",
     description= """
+    Aplikacja do tworzenia quizów
+    
     Funkcjonalności:
     - Tworzenie i zarządzanie quizami przez użytkowników.
     - Dodawanie historii rozgrywek.

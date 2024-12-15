@@ -55,13 +55,14 @@ async def update_history(
     updated_history: HistoryIn,
     service: IHistoryService = Depends(Provide[Container.history_service]),
 ) -> dict:
-
     if await service.get_history_by_id(history_id=history_id):
-        await service.update_history(
+        updated = await service.update_history(
             history_id=history_id,
             data=updated_history,
         )
-        return {**updated_history.model_dump(), "id": history_id}
+        if updated:
+            return updated.model_dump()
+        raise HTTPException(status_code=500, detail="Failed to update history")
     raise HTTPException(status_code=404, detail="History not found")
 
 

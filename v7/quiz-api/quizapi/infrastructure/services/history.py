@@ -26,19 +26,34 @@ class HistoryService(IHistoryService):
         total_questions = await self._repository.get_total_questions_by_quiz(data.quiz_id)
         total_questions = len(list(total_questions))
         if total_questions > 0:
-            data.total_questions = total_questions
-            data.effectiveness=(data.correct_answers/data.total_questions)
-        return await self._repository.add_history(data)
+            effectiveness = data.correct_answers / total_questions
+            return await self._repository.add_history(
+                data=data,
+                total_questions=total_questions,
+                effectiveness=effectiveness,
+            )
+        return None
 
     async def update_history(
             self,
             history_id: int,
             data: HistoryIn
     ) -> History | None:
-        return await self._repository.update_history(
+        existing_history = await self._repository.get_history_by_id(history_id)
+        if not existing_history:
+            return None
+
+        total_questions = await self._repository.get_total_questions_by_quiz(data.quiz_id)
+        total_questions_count = len(list(total_questions))
+        effectiveness = data.correct_answers / total_questions_count if total_questions_count > 0 else 0.0
+
+        updated = await self._repository.update_history(
             history_id=history_id,
             data=data,
+            total_questions=total_questions_count,
+            effectiveness=effectiveness,
         )
+        return updated
 
     async def delete_history(self, history_id: int) -> bool:
         return await self._repository.delete_history(history_id)

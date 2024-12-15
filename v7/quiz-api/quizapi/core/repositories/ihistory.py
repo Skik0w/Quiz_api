@@ -17,14 +17,16 @@ class IHistoryRepository(ABC):
         """ """
 
     @abstractmethod
-    async def add_history(self, data: HistoryIn) -> Any | None:
+    async def add_history(self, data: HistoryIn, total_questions: int, effectiveness: float) -> Any | None:
         """ """
 
     @abstractmethod
     async def update_history(
             self,
             history_id: int,
-            data: HistoryIn
+            data: HistoryIn,
+            total_questions: int,
+            effectiveness: float,
     ) -> Any | None:
         """ """
 

@@ -67,3 +67,14 @@ async def delete_quiz(
         return
 
     raise HTTPException(status_code=404, detail="Quiz not found")
+
+@router.get("/share/{quiz_id}", tags=["Quiz"], status_code=200)
+@inject
+async def share_quiz(
+    quiz_id: int,
+    service: IQuizService = Depends(Provide[Container.quiz_service]),
+) -> dict:
+    if await service.get_quiz_by_id(quiz_id=quiz_id):
+        shared_quiz = await service.share_quiz(quiz_id)
+        return shared_quiz.model_dump()
+    raise HTTPException(status_code=404, detail="Quiz not found")

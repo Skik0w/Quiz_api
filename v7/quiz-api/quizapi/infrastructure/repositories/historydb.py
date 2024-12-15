@@ -94,8 +94,15 @@ class HistoryRepository(IHistoryRepository):
         histories = await database.fetch_all(query)
         return [History(**dict(history)) for history in histories]
 
-    async def add_history(self, data: HistoryIn) -> Any | None:
-        query = history_table.insert().values(**data.model_dump())
+    async def add_history(self, data: HistoryIn, total_questions: int, effectiveness: float) -> Any | None:
+        query = history_table.insert().values(
+            player_id=data.player_id,
+            quiz_id=data.quiz_id,
+            correct_answers=data.correct_answers,
+            timestamp=data.timestamp,
+            total_questions=total_questions,
+            effectiveness=effectiveness
+        )
         new_history_id = await database.execute(query)
         new_history = await self._get_by_id(new_history_id)
         return History(**dict(new_history)) if new_history else None
@@ -104,18 +111,28 @@ class HistoryRepository(IHistoryRepository):
             self,
             history_id: int,
             data: HistoryIn,
-    ) -> Any | None:
+            total_questions: int,
+            effectiveness: float
+    ) -> History | None:
+        existing_history = await self._get_by_id(history_id)
+        if not existing_history:
+            return None
 
-        if self._get_by_id(history_id):
-            query = (
-                history_table.update()
-                .where(history_table.c.id == history_id)
-                .values(**data.model_dump())
+        query = (
+            history_table.update()
+            .where(history_table.c.id == history_id)
+            .values(
+                player_id=data.player_id,
+                quiz_id=data.quiz_id,
+                correct_answers=data.correct_answers,
+                timestamp=data.timestamp,
+                total_questions=total_questions,
+                effectiveness=effectiveness,
             )
-            await database.execute(query)
-            history = await self._get_by_id(history_id)
-            return History(**dict(history)) if history else None
-        return None
+        )
+        await database.execute(query)
+        updated_history = await self._get_by_id(history_id)
+        return History(**dict(updated_history)) if updated_history else None
 
     async def delete_history(self, history_id: int) -> bool:
         if self._get_by_id(history_id):

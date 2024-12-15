@@ -90,6 +90,15 @@ class QuizRepository(IQuizRepository):
             return True
         return False
 
+    async def share_quiz(self, quiz_id: int) -> Any | None:
+        query = (
+            quiz_table.update()
+            .where(quiz_table.c.id == quiz_id)
+            .values(shared=True)
+        )
+        await database.execute(query)
+        return await self._get_by_id(quiz_id)
+
     async def _get_by_id(self, quiz_id: int) -> Record | None:
 
         query = (

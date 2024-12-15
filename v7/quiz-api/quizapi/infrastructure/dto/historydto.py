@@ -1,6 +1,7 @@
 from datetime import datetime
 from asyncpg import Record  # type: ignore
 from pydantic import BaseModel, ConfigDict
+from typing import Optional
 
 from quizapi.infrastructure.dto.playerdto import PlayerDTO
 from quizapi.infrastructure.dto.quizdto import QuizDTO
@@ -11,8 +12,8 @@ class HistoryDTO(BaseModel):
     player: PlayerDTO
     quiz: QuizDTO
     total_questions: int
-    correct_answers: int
-    effectiveness: float
+    correct_answers: Optional[int]
+    effectiveness: Optional[float]
     timestamp: datetime
 
     model_config = ConfigDict(

@@ -33,3 +33,15 @@ class QuizService(IQuizService):
 
     async def delete_quiz(self, quiz_id: int) -> bool:
         return await self._repository.delete_quiz(quiz_id)
+
+    async def share_quiz(self, quiz_id: int) -> Quiz | None:
+        quiz = await self.get_quiz_by_id(quiz_id)
+        return await self._repository.update_quiz(
+            quiz_id=quiz_id,
+            data=QuizIn(
+                title=quiz.title,
+                player_id=quiz.player.id,
+                description=quiz.description,
+                shared=True,
+            )
+        )

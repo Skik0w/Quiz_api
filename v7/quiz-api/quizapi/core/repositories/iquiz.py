@@ -27,3 +27,7 @@ class IQuizRepository(ABC):
     @abstractmethod
     async def delete_quiz(self, quiz_id: int) -> bool:
         """ """
+
+    @abstractmethod
+    async def share_quiz(self, quiz_id: int) -> Any | None:
+        """ """
