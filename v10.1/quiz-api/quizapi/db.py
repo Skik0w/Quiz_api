@@ -1,4 +1,5 @@
 import asyncio
+from enum import UNIQUE
 
 import databases
 import sqlalchemy
@@ -39,6 +40,7 @@ quiz_table = sqlalchemy.Table(
     ),
     sqlalchemy.Column("description", sqlalchemy.String),
     sqlalchemy.Column("shared", sqlalchemy.Boolean),
+    sqlalchemy.Column("reward", sqlalchemy.String, nullable=False, unique=True),
 )
 
 question_table = sqlalchemy.Table(
@@ -83,9 +85,29 @@ tournament_table = sqlalchemy.Table(
     sqlalchemy.Column("id", sqlalchemy.Integer, primary_key=True),
     sqlalchemy.Column("name", sqlalchemy.String),
     sqlalchemy.Column("description", sqlalchemy.String),
-    sqlalchemy.Column("quizzes", sqlalchemy.JSON, default=list),
-    sqlalchemy.Column("players", sqlalchemy.JSON, default=list),
-    sqlalchemy.Column("results", sqlalchemy.JSON, default=dict),
+    sqlalchemy.Column("quizzes_id", sqlalchemy.ARRAY(sqlalchemy.Integer), nullable=False),
+    sqlalchemy.Column("participants", sqlalchemy.ARRAY(UUID(as_uuid=True)), nullable=False),
+)
+
+reward_table = sqlalchemy.Table(
+    "rewards",
+    metadata,
+    sqlalchemy.Column("id", sqlalchemy.Integer, primary_key=True),
+    sqlalchemy.Column(
+        "quiz_id",
+        sqlalchemy.ForeignKey("quizzes.id"),
+        nullable=False,
+    ),
+    sqlalchemy.Column(
+        "player_id",
+        sqlalchemy.ForeignKey("players.id"),
+        nullable=False,
+    ),
+    sqlalchemy.Column(
+        "reward",
+        sqlalchemy.ForeignKey("quizzes.reward"),
+        nullable=False,
+    ),
 )
 
 db_uri = (
