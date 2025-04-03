@@ -1,4 +1,4 @@
-### PSI - Aplikacja do Tworzenia Quizów
+# PSI - Aplikacja do Tworzenia Quizów
 
 ## Kluczowe Funkcjonalności
 
